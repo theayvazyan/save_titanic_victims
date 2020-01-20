@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import os
 
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
@@ -9,13 +8,8 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import cross_val_score
 from xgboost import XGBRegressor
 
-for dirname, _, filenames in os.walk('/kaggle/input'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
-
-train_data = pd.read_csv('/kaggle/input/titanic/train.csv')
-test_data = pd.read_csv('/kaggle/input/titanic/test.csv')
-gender_data = pd.read_csv('/kaggle/input/titanic/gender_submission.csv')
+train_data = pd.read_csv('train.csv')
+test_data = pd.read_csv('test.csv')
 
 tcoi = ['PassengerId', 'Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked']
 numcols = ['PassengerId', 'Pclass', 'Age', 'SibSp', 'Parch', 'Fare']

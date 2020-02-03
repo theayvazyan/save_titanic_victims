@@ -75,12 +75,12 @@ XGBoost is an implementation of gradient boosted decision trees designed for spe
 
 ### Cons
 
-..* Parallelization of tree construction using all of your CPU cores during training.
-..* Distributed Computing for training very large models using a cluster of machines.
-..* Out-of-Core Computing for very large datasets that don’t fit into memory.
-..* Cache Optimization of data structures and algorithm to make best use of hardware.
++ Parallelization of tree construction using all of your CPU cores during training.
++ Distributed Computing for training very large models using a cluster of machines.
++ Out-of-Core Computing for very large datasets that don’t fit into memory.
++ Cache Optimization of data structures and algorithm to make best use of hardware.
 
 thus, resulting in
 
-..* High Execution Speed
-..* High Model Performance
++ High Execution Speed
++ High Model Performance
